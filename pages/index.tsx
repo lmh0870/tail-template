@@ -1,12 +1,12 @@
-import type { NextPage } from "next";
+import ReactionContainer from "@components/ReactionContainer";
+import { NextPage } from "next";
 
-const Home: NextPage = () => {
+const Page: NextPage = () => {
   return (
-    <div className="h-[2000px] bg-red-500 text-white">
-      <h1 className="text-black">it works</h1>
-      <input className="appearance-none" placeholder="First name" />
+    <div>
+      <ReactionContainer />
     </div>
   );
 };
 
-export default Home;
+export default Page;
