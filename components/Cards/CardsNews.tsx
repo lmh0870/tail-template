@@ -55,11 +55,20 @@ const Comp = ({
           <div> {name} </div>
           <div className="text-sm text-gray-500"> {date} </div>
         </header>
-
         <section className="grid grid-cols-4 gap-3">
           <div className="col-span-3 flex flex-col">
-            <div className="pt-3 text-lg font-bold">{title}</div>
-            <div className="pt-2 text-sm font-light ">{payload}</div>
+            <div
+              className="pt-3
+              text-lg font-bold"
+            >
+              {title}
+            </div>
+            <div
+              className="pt-2
+              text-sm font-light "
+            >
+              {payload}
+            </div>
           </div>
           {/*  */}
           <div className="flex items-center ">

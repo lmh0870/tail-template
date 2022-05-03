@@ -18,9 +18,9 @@ export default function Container({}: ContainerProps) {
               name="Name"
               value="value-1"
               className="h-4 w-4
-                border-gray-300
-                focus:ring-2 focus:ring-blue-300
-                "
+              border-gray-300
+              focus:ring-2 focus:ring-blue-300
+              "
             />
             <label
               htmlFor="country-option-1"

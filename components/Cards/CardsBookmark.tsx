@@ -30,6 +30,7 @@ const Comp = () => {
             <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
           </svg>
         </button>
+
         <div
           className="w-full
           rounded-xl border border-gray-400/50
@@ -62,7 +63,10 @@ export interface ContainerProps {
 export default function Container({}: ContainerProps) {
   return (
     <>
-      <div className="grid gap-3 bg-indigo-100 p-4 lg:grid-cols-2">
+      <div
+        className="grid gap-3
+        bg-indigo-100 p-4 lg:grid-cols-2"
+      >
         <Comp />
         <Comp />
       </div>
