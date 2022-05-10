@@ -30,7 +30,6 @@ const Comp = () => {
             <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
           </svg>
         </button>
-
         <div
           className="w-full
           rounded-xl border border-gray-400/50
@@ -42,7 +41,12 @@ const Comp = () => {
           group-hover:opacity-100
           "
         >
-          <h1 className="mb-10 text-3xl font-bold text-white">Title</h1>
+          <h1
+            className="mb-10
+            text-3xl font-bold text-white"
+          >
+            Title
+          </h1>
           <div className="flex justify-between">
             <h3 className="text-lg font-bold capitalize text-white">Price</h3>
             <h3 className="text-lg font-bold capitalize text-white">View</h3>
@@ -50,7 +54,8 @@ const Comp = () => {
         </div>
       </div>
       <img
-        className="w-full bg-cover bg-center"
+        className="w-full
+        bg-cover bg-center"
         src="https://images.unsplash.com/photo-1598605272254-16f0c0ecdfa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
       />
     </div>
