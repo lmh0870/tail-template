@@ -1,3 +1,10 @@
+interface CompProps {
+  [key: string]: any;
+}
+const Comp = () => {
+  return <></>;
+};
+
 export interface ContainerProps {
   [key: string]: any;
 }
@@ -5,125 +12,118 @@ export interface ContainerProps {
 export default function Container({}: ContainerProps) {
   return (
     <>
-      <div className="py-6">
-        <div
-          className="mx-auto flex max-w-xs overflow-hidden
-          rounded-lg bg-white
-          shadow-lg
-          lg:max-w-4xl"
-        >
-          <div
-            className="hidden
-            bg-[url('https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80')]
-            bg-cover lg:block lg:w-1/2"
-          />
-          <div className="w-full p-8 lg:w-1/2">
-            <h2 className="text-center text-2xl font-semibold text-gray-700">
-              Brand
-            </h2>
-            <p className="text-center text-xl text-gray-600">Welcome back!</p>
-            <a
-              href="#"
-              className="mt-4 flex items-center justify-center
-              rounded-lg
-              text-white
-              shadow-md hover:bg-gray-100"
+      <div className="block max-w-sm rounded-lg bg-white p-6 shadow-lg">
+        <form>
+          <div className="form-group mb-6">
+            <label
+              htmlFor="exampleInputEmail2"
+              className="form-label mb-2 inline-block text-gray-700"
             >
-              <div className="px-4 py-3">
-                <svg className="h-6 w-6" viewBox="0 0 40 40">
-                  <path
-                    d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.045 27.2142 24.3525 30 20 30C14.4775 30 10 25.5225 10 20C10 14.4775 14.4775 9.99999 20 9.99999C22.5492 9.99999 24.8683 10.9617 26.6342 12.5325L31.3483 7.81833C28.3717 5.04416 24.39 3.33333 20 3.33333C10.7958 3.33333 3.33335 10.7958 3.33335 20C3.33335 29.2042 10.7958 36.6667 20 36.6667C29.2042 36.6667 36.6667 29.2042 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z"
-                    fill="#FFC107"
-                  />
-                  <path
-                    d="M5.25497 12.2425L10.7308 16.2583C12.2125 12.59 15.8008 9.99999 20 9.99999C22.5491 9.99999 24.8683 10.9617 26.6341 12.5325L31.3483 7.81833C28.3716 5.04416 24.39 3.33333 20 3.33333C13.5983 3.33333 8.04663 6.94749 5.25497 12.2425Z"
-                    fill="#FF3D00"
-                  />
-                  <path
-                    d="M20 36.6667C24.305 36.6667 28.2167 35.0192 31.1742 32.34L26.0159 27.975C24.3425 29.2425 22.2625 30 20 30C15.665 30 11.9842 27.2359 10.5975 23.3784L5.16254 27.5659C7.92087 32.9634 13.5225 36.6667 20 36.6667Z"
-                    fill="#4CAF50"
-                  />
-                  <path
-                    d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.7592 25.1975 27.56 26.805 26.0133 27.9758C26.0142 27.975 26.015 27.975 26.0158 27.9742L31.1742 32.3392C30.8092 32.6708 36.6667 28.3333 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z"
-                    fill="#1976D2"
-                  />
-                </svg>
-              </div>
-              <h1
-                className="w-5/6 px-4 py-3
-                text-center font-bold text-gray-600"
-              >
-                Sign in with Google
-              </h1>
-            </a>
-            <div className="mt-4 flex items-center justify-between">
-              <span className="w-1/5 border-b lg:w-1/4" />
-              <a
-                href="#"
-                className="text-center text-xs uppercase text-gray-500"
-              >
-                or login with email
-              </a>
-              <span className="w-1/5 border-b lg:w-1/4" />
-            </div>
-            <div className="mt-4">
-              <label
-                htmlFor="email"
-                className="mb-2 block text-sm font-bold text-gray-700"
-              >
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                className="focus:shadow-outline block w-full appearance-none
-                  rounded border border-gray-300
-                  bg-gray-200
-                  py-2 px-4
+              Email address
+            </label>
+            <input
+              type="email"
+              className="form-control
+                  m-0
+                  block
+                  w-full
+                  rounded
+                  border
+                  border-solid
+                  border-gray-300
+                  bg-white bg-clip-padding
+                  px-3 py-1.5 text-base
+                  font-normal
                   text-gray-700
-                  focus:outline-none"
-              />
-            </div>
-            <div className="mt-4">
-              <div className="flex justify-between">
-                <label
-                  className="mb-2 block
-                  text-sm font-bold text-gray-700"
-                >
-                  Password
-                </label>
-                <a href="#" className="text-xs text-gray-500">
-                  Forget Password?
-                </a>
-              </div>
-              <input
-                className="focus:shadow-outline block w-full appearance-none
-                rounded border border-gray-300
-                bg-gray-200
-                py-2 px-4
-                text-gray-700 focus:outline-none"
-                type="password"
-              />
-            </div>
-            <div className="mt-8">
-              <button
-                className="w-full rounded
-                bg-gray-700 py-2 px-4
-                font-bold
-                text-white hover:bg-gray-600"
-              >
-                Login
-              </button>
-            </div>
-            <div className="mt-4 flex items-center justify-between">
-              <span className="w-1/5 border-b md:w-1/4"></span>
-              <a href="#" className="text-xs uppercase text-gray-500">
-                or sign up
-              </a>
-              <span className="w-1/5 border-b md:w-1/4"></span>
-            </div>
+                  transition
+                  ease-in-out
+                  focus:border-blue-600 focus:bg-white focus:text-gray-700 focus:outline-none"
+              id="exampleInputEmail2"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
           </div>
-        </div>
+          <div className="form-group mb-6">
+            <label
+              htmlFor="exampleInputPassword2"
+              className="form-label mb-2 inline-block text-gray-700"
+            >
+              Password
+            </label>
+            <input
+              type="password"
+              className="form-control m-0
+                  block
+                  w-full
+                  rounded
+                  border
+                  border-solid
+                  border-gray-300
+                  bg-white bg-clip-padding
+                  px-3 py-1.5 text-base
+                  font-normal
+                  text-gray-700
+                  transition
+                  ease-in-out
+                  focus:border-blue-600 focus:bg-white focus:text-gray-700 focus:outline-none"
+              id="exampleInputPassword2"
+              placeholder="Password"
+            />
+          </div>
+          <div className="mb-6 flex items-center justify-between">
+            <div className="form-group form-check">
+              <input
+                type="checkbox"
+                className="form-check-input float-left mt-1 mr-2 h-4 w-4 cursor-pointer appearance-none rounded-sm border border-gray-300 bg-white bg-contain bg-center bg-no-repeat align-top transition duration-200 checked:border-blue-600 checked:bg-blue-600 focus:outline-none"
+                id="exampleCheck2"
+              />
+              <label
+                className="form-check-label inline-block text-gray-800"
+                htmlFor="exampleCheck2"
+              >
+                Remember me
+              </label>
+            </div>
+            <a
+              href="#!"
+              className="text-blue-600 transition duration-200 ease-in-out hover:text-blue-700 focus:text-blue-700"
+            >
+              Forgot password?
+            </a>
+          </div>
+          <button
+            type="submit"
+            className="
+                w-full
+                rounded
+                bg-blue-600
+                px-6
+                py-2.5
+                text-xs
+                font-medium
+                uppercase
+                leading-tight
+                text-white
+                shadow-md
+                transition duration-150
+                ease-in-out hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700
+                focus:shadow-lg focus:outline-none
+                focus:ring-0
+                active:bg-blue-800
+                active:shadow-lg"
+          >
+            Sign in
+          </button>
+          <p className="mt-6 text-center text-gray-800">
+            Not a member?{" "}
+            <a
+              href="#!"
+              className="text-blue-600 transition duration-200 ease-in-out hover:text-blue-700 focus:text-blue-700"
+            >
+              Register
+            </a>
+          </p>
+        </form>
       </div>
     </>
   );

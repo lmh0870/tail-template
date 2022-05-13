@@ -1,13 +1,13 @@
-import CommentBasic from "@components/Comment/CommentBasic";
-import CommentDiscord from "@components/Comment/CommentDiscord";
-import TimeMonth from "@components/Timeline/TimeMonth";
+import ToggleBasic from "@components/Toggles/ToggleBasic";
+import ToggleChecked from "@components/Toggles/ToggleChecked";
+import ToggleNoLabels from "@components/Toggles/ToggleNoLabels";
 import { NextPage } from "next";
 
 const Page: NextPage = () => {
   return (
-    <>
-      <CommentBasic />
-    </>
+    <div className="">
+      <ToggleNoLabels />
+    </div>
   );
 };
 

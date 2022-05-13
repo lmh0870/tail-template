@@ -16,6 +16,10 @@ export default function MyDocument() {
           rel="stylesheet"
           href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css"
         />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+        />
       </Head>
       <body>
         <Main />
